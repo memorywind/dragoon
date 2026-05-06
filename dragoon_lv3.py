@@ -16,6 +16,7 @@ from ecdsa.curves import Curve
 
 def _curve_by_name(name: str) -> Curve:
     m = {
+        "SECP224R1": curves.NIST224p,
         "SECP256R1": curves.NIST256p,
         "SECP384R1": curves.NIST384p,
         "SECP521R1": curves.NIST521p,
